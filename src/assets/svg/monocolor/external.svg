@@ -1,0 +1,9 @@
+<svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5.5" y="0.5" width="21" height="4" stroke="currentColor"></rect>
+    <rect x="0.5" y="13.5" width="31" height="11" stroke="currentColor"></rect>
+    <rect x="5.25" y="6.25" width="21.5" height="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.5"></rect>
+    <rect x="0.75" y="6.25" width="18.5" height="0.5" transform="rotate(90 0.75 6.25)" fill="currentColor" stroke="currentColor" stroke-width="0.5"></rect>
+    <rect x="31.75" y="6.25" width="18.5" height="0.5" transform="rotate(90 31.75 6.25)" fill="currentColor" stroke="currentColor" stroke-width="0.5"></rect>
+    <path d="M0.5 6.63962V0.5H5.5V8.30629L0.5 6.63962Z" stroke="currentColor"></path>
+    <path d="M31.5 6.63962V0.5H26.5V8.30629L31.5 6.63962Z" stroke="currentColor"></path>
+</svg>

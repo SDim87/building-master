@@ -1,0 +1,20 @@
+@import (reference) '../../less/variables.less';
+
+.logo {
+  width: 152px;
+  height: 51px;
+  margin-right: 64px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: @hamburger) {
+    width: 120px;
+    height: 40px;
+    align-items: initial;
+  }
+
+  &__icon {
+    width: 100%;
+    display: block;
+  }
+}

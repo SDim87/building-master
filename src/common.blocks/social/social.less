@@ -1,0 +1,75 @@
+@import (reference) '../../less/variables.less';
+
+.social {
+  &__link {
+    display: flex;
+  
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 50%;
+    border: 1px solid @color-first;
+  
+    @media screen and (max-width: @hamburger) {
+      background-color: @color-third;
+    }
+  }
+
+  &_order {
+    margin-right: 8px;
+  }
+
+  &__icon-vk {
+    width: 19px;
+    height: 11px;
+    margin: auto;
+  }
+
+  &__icon-inst {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+  }
+
+  &__btn {
+    border-radius: 60px;
+    line-height: 54px;
+    font-size: 18px;
+    color: @color-text-second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    width: 50%;
+
+    @media screen and (max-width: @phone-landscape) {
+      width: 100%;
+    }
+  }
+
+  &__btn:first-child {
+    margin-right: 24px;
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__btn_vk {
+    background-color: @color-vk;
+  }
+
+  &__btn_vk .social__icon-vk,
+  &__btn_inst .social__icon-inst {
+    margin: 0;
+    fill: @color-third;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__btn_inst {
+    background: @gradient-inst;
+  }
+}

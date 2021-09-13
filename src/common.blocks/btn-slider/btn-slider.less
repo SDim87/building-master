@@ -1,0 +1,46 @@
+@import (reference) '../../less/variables.less';
+
+.btn-slider {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  
+  width: 40px;
+  height: 40px;
+  margin-top: -24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid @color-dark-light;
+  
+  cursor: pointer;
+  transform: translateY(-50%);
+  
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 44px;
+  background-color: @color-third;
+  transition: @transition;
+
+  @media screen and (max-width: @tablet-landscape) {
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid @color-brand;
+  }
+
+  &:hover svg {
+    fill: @color-brand;
+  }
+
+  &__prev {
+    left: 16px;
+  }
+
+  &__next {
+    right: 16px;
+  }
+}

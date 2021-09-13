@@ -1,0 +1,287 @@
+@import (reference) "../../less/variables.less";
+
+
+
+.about__wrapper {
+  display: flex;
+
+  @media screen and (max-width: @tablet) {
+    display: block;
+  }
+}
+
+.about__list {
+  flex: 0 0 auto;
+
+  max-width: 33.3%;
+  min-height: 300px;
+  margin-right: 80px;
+
+  list-style-type: none;
+
+  @media screen and (max-width: @tablet) {
+    max-width: 345px;
+    min-height: 220px;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.about__item {
+  position: relative;
+
+  padding-left: 20px;
+
+  cursor: pointer;
+  transition: @transition;
+
+  color: rgba(@color-text-third, 0.5);
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 4px;
+    height: 6px;
+
+    content: "";
+    -webkit-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+    transform: translateY(-50%);
+
+    border-radius: 12px;
+    background-color: @color-fifth;
+  }
+
+  &.isActive::before {
+    height: 100%;
+  }
+
+  &.isActive {
+    color: #484444;
+  }
+}
+
+.about__title {
+  font-size: 24px;
+  font-weight: 700;
+
+  @media screen and (max-width: @tablet) {
+    font-size: 20px;
+  }
+}
+
+.about__text {
+  overflow: hidden;
+
+  max-height: 0;
+
+  transition: all 0.2 ease-in-out;
+
+  font-size: 14px;
+
+  @media screen and (max-width: @tablet) {
+    font-size: 12px;
+  }
+
+  .about__item.isActive & {
+    max-height: 300px;
+    margin-top: 8px;
+  }
+}
+
+.about__picture {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  @media screen and (max-width: @tablet) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.about__filter {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: -300px;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 336px;
+  height: 88px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  transition: @transition;
+
+  border-radius: 12px;
+  background-color: @color-dark-light;
+
+  background-blend-mode: multiply;
+
+  @media screen and (max-width: @tablet) {
+    width: auto;
+    height: 64px;
+
+    border-radius: 0;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    height: 45px;
+    padding: 0 16px;
+  }
+
+  &.isActive {
+    bottom: 32px;
+
+    @media screen and (max-width: @tablet) {
+      bottom: 0;
+    }
+  }
+}
+
+.about__filter-wrap {
+  display: flex;
+
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about__place {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 85px;
+  height: 56px;
+  padding: 4px;
+
+  cursor: pointer;
+  transition: @transition;
+  text-align: center;
+
+  border: 1px solid @color-dark-light;
+  border-radius: 8px;
+  background-color: @color-third;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    width: 74px;
+    height: 46px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    height: 28px;
+  }
+
+  &.isActive {
+    pointer-events: none;
+
+    color: @color-brand;
+    border: 1px solid @color-brand;
+  }
+
+  & span {
+    margin-top: 4px;
+  }
+
+  & svg {
+    @media screen and (max-width: @phone-landscape) {
+      display: none;
+    }
+  }
+}
+
+.about__color {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 34px;
+  height: 34px;
+
+  cursor: pointer;
+
+  border: 2px solid @color-third;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  @media screen and (max-width: @phone-landscape) {
+    width: 24px;
+    height: 24px;
+
+    border-width: 1px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 32px;
+
+    @media screen and (max-width: @tablet) {
+      margin-right: 24px;
+    }
+  }
+
+  &.isActive {
+    pointer-events: none;
+
+    border-color: @color-brand;
+  }
+}
+
+.about__color-bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 34px;
+  height: 34px;
+
+  content: "";
+  transform: translateY(-50%);
+
+  &_white {
+    background-color: @color-third;
+  }
+
+  &_black {
+    background-color: @color-black;
+  }
+
+  &_gray {
+    background-color: @color-gray;
+  }
+
+  &_pink {
+    background-color: @color-pink;
+  }
+
+  &_left {
+    right: -50%;
+    left: 0;
+  }
+
+  &_right {
+    left: 50%;
+  }
+}

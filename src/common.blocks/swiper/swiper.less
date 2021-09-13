@@ -1,0 +1,25 @@
+@import (reference) '../../less/variables.less';
+
+.swiper-pagination-bullet:hover {
+  background: @color-third;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  pointer-events: none;
+
+  background: @color-third;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 24px;
+  left: calc((100vw - 1128px - 24px) / 2);
+
+  @media screen and (max-width: 1240px) {
+    left: 48px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    bottom: 16px;
+    left: 16px;
+  }
+}

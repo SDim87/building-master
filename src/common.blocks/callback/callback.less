@@ -1,0 +1,41 @@
+@import (reference) "../../less/variables.less";
+
+.callback {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 600px;
+
+    justify-content: center;
+
+    @media screen and (max-width: @tablet) {
+      min-height: 400px;
+    }
+
+    @media screen and (max-width: @tablet-small) {
+      align-items: center;
+    }
+  }
+
+  & .title {
+    text-align: left;
+
+    @media screen and (max-width: @tablet-small) {
+      text-align: center;
+    }
+  }
+  
+  &__text {
+    max-width: 530px;
+    
+    @media screen and (max-width: @tablet-small) {
+      text-align: center;
+      max-width: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 32px;
+  }
+}

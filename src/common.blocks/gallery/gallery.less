@@ -1,0 +1,68 @@
+@import (reference) "../../less/variables.less";
+
+.gallery {
+  position: relative;
+
+  &__container {
+    overflow-x: hidden;
+
+    width: 100%;
+  }
+
+  &__wrap-btn {
+    display: flex;
+
+    margin-top: 24px;
+
+    justify-content: center;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .swiper-slide {
+    width: 1000px;
+
+    border-radius: 12px;
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(9),
+    &:nth-child(12) {
+      width: 492px;
+    }
+
+    @media screen and (max-width: @tablet-landscape) {
+      width: 556px;
+
+      &:nth-child(2),
+      &:nth-child(9),
+      &:nth-child(12) {
+        width: 274px;
+      }
+
+      &:nth-child(4),
+      &:nth-child(6) {
+        width: 269px;
+      }
+    }
+
+    @media screen and (max-width: @tablet-small) {
+      width: 301px;
+
+      &:nth-child(2),
+      &:nth-child(9),
+      &:nth-child(12) {
+        width: 148px;
+      }
+
+      &:nth-child(4),
+      &:nth-child(6) {
+        width: 146px;
+      }
+    }
+  }
+}

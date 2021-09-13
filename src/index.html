@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cupboard Shop</title>
+    <link
+      rel="preload"
+      href="fonts/Raleway-Regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Oswald-Regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header__order js-header__order"></div>
+    <header class="header js-header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <!-- <img class="logo__icon" src="./common.blocks/logo/logo.svg" alt="Логотип"> -->
+            Logotype
+          </div>
+          <div class="header__dropdown js-header__dropdown">
+            <div class="header__menu">
+              <nav class="header__nav js-header__nav">
+                <ul class="navigation">
+                  <li class="navigation__item">
+                    <a
+                      href="#products"
+                      class="navigation__link js-navigation__link js-scroll-block"
+                      >Товары</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a
+                      href="#about"
+                      class="navigation__link js-navigation__link js-scroll-block"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a
+                      href="#tabs"
+                      class="navigation__link js-navigation__link js-scroll-block"
+                      >Галерея</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="contacts">
+                <div class="contacts__wrap">
+                  <div class="contacts__item contacts__item_order_s">
+                    <svg class="contacts__icon">
+                      <use xlink:href="#phone"></use>
+                    </svg>
+                    <a href="tel:+7(964)877-47-78" class="contacts__link"
+                      >+7 (964) 877-47-78</a
+                    >
+                  </div>
+                </div>
+                <div class="contacts__soc social">
+                  <a
+                    class="social__link social_order"
+                    href="https://vk.com/id606189830"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg class="social__icon-vk">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                  <a
+                    class="social__link"
+                    href="https://www.instagram.com/chistaya58penza?r=nametag"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg class="social__icon-inst">
+                      <use xlink:href="#inst"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__btn js-header__btn"></div>
+          <div class="header__btn_close js-header__btn_close"></div>
+        </div>
+      </div>
+      <div class="header__horizont-line js-header__horizont-line"></div>
+    </header>
+
+    <main class="main js-header__indent">
+      <!-- ========== Slider ============== -->
+      <section class="slider">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <div class="slider__container js-slider__container">
+          <div class="swiper-wrapper">
+            <div
+              class="slider__item swiper-slide"
+              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+            >
+              <div class="container container_from_slider">
+                <div class="slider__title">Мебель от Профессионалов</div>
+                <p class="slider__text">
+                  Наши клиенты всегда довольны результатом!
+                </p>
+              </div>
+            </div>
+            <div
+              class="slider__item swiper-slide"
+              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+            >
+              <div class="container container_from_slider">
+                <div class="slider__title">Оптом дешевле</div>
+                <p class="slider__text">
+                  При заказе более 30 000 рублей - скидка 10%
+                </p>
+              </div>
+            </div>
+            <div
+              class="slider__item swiper-slide"
+              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+            >
+              <div class="container container_from_slider">
+                <div class="slider__title">Постоянным клиентам</div>
+                <p class="slider__text">
+                  При повторном заказе мебели - скидка 10%
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="slider__pagination"></div>
+        </div>
+      </section>
+      <!-- ========== About ============== -->
+      <div class="body__indent body__indent_bgFourth" id="about">
+        <section class="about">
+          <div class="container">
+            <h2 class="title title_foure title_order_l">
+              Создайте свой шкаф за несколько простых шагов
+            </h2>
+            <div class="about__wrapper">
+              <ul class="about__list">
+                <li class="about__item js_about__item" id="about__block-1">
+                  <p class="about__title">Задавайте размер</p>
+                  <p class="about__text js_about__text">
+                    Настройте ширину, высоту, глубину, чтобы максимально
+                    использовать ваше пространство.
+                  </p>
+                </li>
+                <li class="about__item js_about__item" id="about__block-2">
+                  <p class="about__title">Создавайте свой проект</p>
+                  <p class="about__text js_about__text">
+                    Выберите высокие двери только с внутренними ящиками или
+                    добавьте внешние ящики для более быстрого доступа.
+                  </p>
+                </li>
+                <li class="about__item js_about__item" id="about__block-3">
+                  <p class="about__title">Выберите свой цвет</p>
+                  <p class="about__text js_about__text">
+                    Выберите цвет, соответствующий вашему пространству.
+                  </p>
+                </li>
+              </ul>
+              <div class="about__picture">
+                <div class="about__img">
+                  <img
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__size_img-1.webp"
+                    alt="Изображение шкафа"
+                  />
+                </div>
+                <div class="visually-hidden">
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__size_img-2.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__size_img-3.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_white_1.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_white_2.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_black_1.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_black_2.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_gray_1.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_gray_2.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_multy_1.webp"
+                    alt="Изображение шкафа"
+                  />
+                  <img
+                    loading="lazy"
+                    class="image js_about__img"
+                    src="./common.blocks/about/about__img_multy_2.webp"
+                    alt="Изображение шкафа"
+                  />
+                </div>
+                <div class="about__filter js_about__filter_size">
+                  <div class="about__filter-wrap">
+                    <button class="about__place js-about__size" data-size="1">
+                      Мини
+                    </button>
+                    <button class="about__place js-about__size" data-size="2">
+                      Средний
+                    </button>
+                    <button class="about__place js-about__size" data-size="3">
+                      Большой
+                    </button>
+                  </div>
+                </div>
+                <div class="about__filter js_about__filter_double">
+                  <div class="about__filter-wrap">
+                    <button class="about__place js_about__place" data-place="1">
+                      <svg style="fill: white;">
+                        <use xlink:href="#internal"></use>
+                      </svg>
+                      <span>Internal</span>
+                    </button>
+                    <button class="about__place js_about__place" data-place="2">
+                      <svg style="fill: white;">
+                        <use xlink:href="#external"></use>
+                      </svg>
+                      <span>External</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="about__filter js_about__filter_color">
+                  <div class="about__filter-wrap">
+                    <button
+                      class="about__color js-about__color"
+                      data-color="white"
+                    >
+                      <span class="about__color-bg about__color-bg_white">
+                        Белый цвет
+                      </span>
+                    </button>
+                    <button
+                      class="about__color js-about__color"
+                      data-color="gray"
+                    >
+                      <span class="about__color-bg about__color-bg_gray">
+                        Серый цвет
+                      </span>
+                    </button>
+                    <button
+                      class="about__color js-about__color"
+                      data-color="multy"
+                    >
+                      <span
+                        class="about__color-bg about__color-bg_gray about__color-bg_left"
+                      >
+                        Серый цвет
+                      </span>
+                      <span
+                        class="about__color-bg about__color-bg_pink about__color-bg_right"
+                      >
+                        Розовый цвет
+                      </span>
+                    </button>
+                    <button
+                      class="about__color js-about__color"
+                      data-color="black"
+                    >
+                      <span class="about__color-bg about__color-bg_black">
+                        Черный цвет
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ========== products ============== -->
+      <div class="body__indent body__indent_bgFourth" id="products">
+        <div class="container">
+          <section class="products">
+            <h2 class="title title_two title_order_l">Продукция</h2>
+            <div class="products__box" style="position: relative;">
+              <div class="products__container js-products__container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/sale/sale__img_1.webp"
+                              alt="Картинка товара"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф 01</p>
+                          <p class="grid__size">Ширина: 1490 мм</p>
+                          <p class="grid__size">Высота: 2340 мм</p>
+                          <p class="grid__size">Глубина: 530 мм</p>
+                          <p class="grid__price">139 000 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/sale/sale__img_2.webp"
+                              alt="Картинка товара"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф 02</p>
+                          <p class="grid__size">Ширина: 2510 мм</p>
+                          <p class="grid__size">Высота: 2370 мм</p>
+                          <p class="grid__size">Глубина: 630 мм</p>
+                          <p class="grid__price">217 300 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/sale/sale__img_3.webp"
+                              alt="Картинка товара"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф 03</p>
+                          <p class="grid__size">Ширина: 1780 мм</p>
+                          <p class="grid__size">Высота: 2990 мм</p>
+                          <p class="grid__size">Глубина: 520 мм</p>
+                          <p class="grid__price">170 300 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/sale/sale__img_4.webp"
+                              alt="Картинка товара"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф 04</p>
+                          <p class="grid__size">Ширина: 560 мм</p>
+                          <p class="grid__size">Высота: 2650 мм</p>
+                          <p class="grid__size">Глубина: 450 мм</p>
+                          <p class="grid__price">77 400 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/sale/sale__img_5.webp"
+                              alt="Картинка товара"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф 05</p>
+                          <p class="grid__size">Ширина: 2550 мм</p>
+                          <p class="grid__size">Высота: 2750 мм</p>
+                          <p class="grid__size">Глубина: 630 мм</p>
+                          <p class="grid__price">238 000 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add navigation buttons -->
+              <div
+                class="btn-slider btn-slider__prev btn-slider__prev_none js-products__prev"
+              >
+                <svg class="icon icon_prev icon_sixth">
+                  <use xlink:href="#arrow-prev"></use>
+                </svg>
+              </div>
+              <div
+                class="btn-slider btn-slider__next btn-slider__next_none js-products__next"
+              >
+                <svg class="icon icon_next">
+                  <use xlink:href="#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div
+              class="products__pagination js-products__pagination swiper-pagination"
+            ></div>
+            <div class="products__wrap-btn">
+              <button class="button button_brand button_size_l">
+                Рассчитать шкаф
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- ========== Ditails ============== -->
+      <div class="body__indent body__indent_bgFourth" id="products">
+        <div class="container container_small">
+          <section class="ditails">
+            <h2 class="title title_two title_order_l">Ассортимент</h2>
+            <div class="ditails__box" style="position: relative;">
+              <div class="ditails__container js-ditails__container">
+                <div class="swiper-wrapper">
+                  <div class="ditails__item swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-1.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Внутренние ящики</p>
+                          <p class="grid__text">
+                            Все ящики закрыты дверцами.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-2.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Внешние выдвижные ящики</p>
+                          <p class="grid__text">
+                            Внешние ящики с системой push-to-open для более
+                            быстрого доступа.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-3.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с рейлом</p>
+                          <p class="grid__text">
+                            Отделение с прочным стальным рейлом на удобной
+                            высоте.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-4.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Двери</p>
+                          <p class="grid__text">
+                            Прочные, легко закрывающиеся распашные двери для
+                            полного доступа к внутренним шкафам.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-5.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Ручки</p>
+                          <p class="grid__text">
+                            Алюминиевые ручки с минималистичным дизайном.
+                            Приятная матовая поверхность.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              src="./static/images/ditails/ditails__img-6.webp"
+                              loading="lazy"
+                              alt="Детали"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">
+                            Дополнительное место для хранения
+                          </p>
+                          <p class="grid__text">
+                            Дополнительное пространство для более объемных
+                            предметов, таких как чемоданы или одеяла.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add navigation buttons -->
+              <div
+                class="btn-slider btn-slider__prev btn-slider__prev_none js-ditails__prev"
+              >
+                <svg class="icon icon_prev icon_sixth">
+                  <use xlink:href="#arrow-prev"></use>
+                </svg>
+              </div>
+              <div
+                class="btn-slider btn-slider__next btn-slider__next_none js-ditails__next"
+              >
+                <svg class="icon icon_next">
+                  <use xlink:href="#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- button -->
+            <div class="ditails__wrap-btn">
+              <button class="button button_brand button_size_l">
+                Рассчитать шкаф
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- ========== Wardrobe ============== -->
+      <div class="body__only-top body__indent_bgSixth" id="wardrobe">
+        <section class="wardrobe">
+          <div class="container">
+            <header class="wardrobe__header">
+              <h2 class="title title_three title_light title_order_l">
+                Гардероб - любовь с&nbsp;первого взгляда
+              </h2>
+              <p>
+                Ищете одноместный, двухместный или трехместный гардероб? Наш
+                продукт был тщательно разработан экспертами, чтобы воплотить в
+                жизнь все ваши пожелания. Каждая деталь имеет значение.
+              </p>
+            </header>
+          </div>
+
+          <div class="wardrobe__box">
+            <article class="wardrobe__article">
+              <div class="wardrobe__slider js-wardrobe__slider-1">
+                <span class="wardrobe__line js-wardrobe__line"></span>
+                <img
+                  class="image wardrobe__img js-wardrobe__img is-active"
+                  src="./static/images/wardrobe/wardrobe__img-1.webp"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-2.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-3.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+              </div>
+              <div class="wardrobe__info js-wardrobe__info">
+                <p class="wardrobe__title">Лучшее использование пространства</p>
+                <p class="wardrobe__text">
+                  Подбранные размеры означают, что вы можете спроектировать
+                  гардероб, который поместится именно там, где вам нужно, вплоть
+                  до последнего сантиметра.
+                </p>
+              </div>
+            </article>
+            <article class="wardrobe__article">
+              <div class="wardrobe__slider js-wardrobe__slider-2">
+                <span class="wardrobe__line js-wardrobe__line"></span>
+                <img
+                  class="image wardrobe__img js-wardrobe__img is-active"
+                  src="./static/images/wardrobe/wardrobe__img-1.webp"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-2.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-3.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+              </div>
+              <div class="wardrobe__info js-wardrobe__info">
+                <p class="wardrobe__title">Понятный процесс проектирования</p>
+                <p class="wardrobe__text">
+                  Больше никаких догадок. Наш онлайн-конфигуратор с 12
+                  предустановленными сегментами поможет вам найти лучший
+                  гардероб для любых нужд хранения.
+                </p>
+              </div>
+            </article>
+            <article class="wardrobe__article">
+              <div class="wardrobe__slider js-wardrobe__slider-3">
+                <span class="wardrobe__line js-wardrobe__line"></span>
+                <img
+                  class="image wardrobe__img js-wardrobe__img is-active"
+                  src="./static/images/wardrobe/wardrobe__img-1.webp"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-2.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+                <img
+                  class="image wardrobe__img js-wardrobe__img"
+                  src="./static/images/wardrobe/wardrobe__img-3.webp"
+                  loading="lazy"
+                  alt="Картинка товара"
+                />
+              </div>
+              <div class="wardrobe__info js-wardrobe__info">
+                <p class="wardrobe__title">Надежный, долговечный</p>
+                <p class="wardrobe__text">
+                  Материалы премиум - класса соответствуют тщательно
+                  разработанным функциям для создания превосходного ощущения,
+                  который прослужит всю жизнь.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <!-- ========== Segments ============== -->
+      <div class="body__indent body__indent_bgFourth" id="segments">
+        <div class="container container_small">
+          <section class="segments">
+            <h2 class="title title_three title_order_l">
+              16 интеллектуальных сегментов для удобной организации
+            </h2>
+            <div class="segments__box" style="position: relative;">
+              <div class="segments__container js-segments__container">
+                <div class="swiper-wrapper grid">
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-1.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с рейлом</p>
+                          <p class="grid__text">
+                            Полноразмерный подвесной рейл, идеально подходящий
+                            для крупногабаритной одежды.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-2.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с двумя рейлами</p>
+                          <p class="grid__text">
+                            Два подвесных рейла - идеально подходят для хранения
+                            короткой одежды.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-3.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с рейлом и полками</p>
+                          <p class="grid__text">
+                            Рейл для развешивания одежды средней длины, сверху и
+                            снизу полки - для более крупных вещей.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-4.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 2 ящиками</p>
+                          <p class="grid__text">
+                            Рейл для предметов средней длины, а также два ящика.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-5.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф</p>
+                          <p class="grid__text">
+                            Рейл для более короткой одежды с открытыми полками
+                            для хранения.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-6.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 2 ящиками</p>
+                          <p class="grid__text">
+                            Универсальный шкаф с рейлом, двумя низкими ящиками и
+                            полкой для хранения.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-7.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 4 ящиками</p>
+                          <p class="grid__text">
+                            Короткая подвесная секция плюс четыре ящика.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-8.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф</p>
+                          <p class="grid__text">
+                            Ряд полок - идеально подходит для коробок, более
+                            объемных предметов одежды.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-9.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф</p>
+                          <p class="grid__text">
+                            Ряд более узких полок для более точной сортировки и
+                            меньшей организации.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-10.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 2 ящиками</p>
+                          <p class="grid__text">
+                            Ряд полок плюс два ящика для хранения мелких
+                            предметов.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-11.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 4 ящиками</p>
+                          <p class="grid__text">
+                            Две секции и четыре ящика.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-12.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с 6 ящиками</p>
+                          <p class="grid__text">
+                            Шесть ящиков и удобные полки для дополнительного
+                            места.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-13.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с внешними ящиками</p>
+                          <p class="grid__text">
+                            Шкаф с рейлом для предметов средней длины, а также
+                            два внешних ящика для скрытого хранения.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-14.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с внешними ящиками</p>
+                          <p class="grid__text">
+                            Шкаф с рейлом для коротких предметов, плюс один
+                            внутренний ящик, чтобы скрыть мелкие предметы, и два
+                            внешних ящика для дополнительного хранения.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-15.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">Шкаф с внешними ящиками</p>
+                          <p class="grid__text">
+                            Шкаф с полками, один внутренний ящик для мелких
+                            предметов, а также два внешних ящика для быстрого
+                            доступа.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid__item grid__item_center_mob">
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/segments/segments__img-16.webp"
+                              alt="Сегмент шкафа"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__bottom">
+                          <p class="grid__title">
+                            Шкаф с внутренними и внешними ящиками
+                          </p>
+                          <p class="grid__text">
+                            Шкаф с двумя полками для объемных предметов, тремя
+                            внутренними ящиками, для скрытого хранения и двумя
+                            внешними ящиками, для более быстрого доступа.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add navigation buttons -->
+              <div
+                class="btn-slider btn-slider__prev btn-slider__prev_none js-segments__prev"
+              >
+                <svg class="icon icon_prev icon_sixth">
+                  <use xlink:href="#arrow-prev"></use>
+                </svg>
+              </div>
+              <div
+                class="btn-slider btn-slider__next btn-slider__next_none js-segments__next"
+              >
+                <svg class="icon icon_next">
+                  <use xlink:href="#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div
+              class="segments__pagination js-segments__pagination swiper-pagination"
+            ></div>
+          </section>
+        </div>
+      </div>
+      <!-- ========== Gallery ============== -->
+      <div class="body__indent body__indent_bgFourth" id="gallery">
+        <div class="container container_small">
+          <section class="gallery">
+            <h2 class="visually-hidden">Галерея</h2>
+            <div class="gallery__box" style="position: relative;">
+              <div class="gallery__container js-gallery__container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-1.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-2.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-3.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-4-1.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-4-2.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-5.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-6-1.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-6-2.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-7.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-8.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-9.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-10.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-11.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-12.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="grid__item grid__item_second grid__item_center_mob"
+                    >
+                      <div class="grid__inner">
+                        <div class="grid__top">
+                          <div class="grid__link">
+                            <img
+                              class="grid__img"
+                              loading="lazy"
+                              src="./static/images/gallery/gallery__img-13.webp"
+                              alt="Изображение галереи"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add navigation buttons -->
+              <div
+                class="btn-slider btn-slider__prev btn-slider__prev_none js-gallery__prev"
+              >
+                <svg class="icon icon_prev icon_sixth">
+                  <use xlink:href="#arrow-prev"></use>
+                </svg>
+              </div>
+              <div
+                class="btn-slider btn-slider__next btn-slider__next_none js-gallery__next"
+              >
+                <svg class="icon icon_next">
+                  <use xlink:href="#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- ========== Callback ============== -->
+      <div class="body__indent body__indent_bgCallback" id="callback">
+        <section class="callback">
+          <div class="container">
+            <div class="callback__wrap">
+              <h2 class="title title_three title_order_l">
+                Закажите выезд специалиста с образцами.
+              </h2>
+              <p class="callback__text">
+                Оставьте заявку на замер, мы свяжемся с вами и согласуем время
+                замера.
+              </p>
+              <p class="callback__text">Данная услуга <b>Бесплатна!</b></p>
+              <div class="callback__btn">
+                <button class="button button_brand button_size_l">
+                  Вызвать замерщика
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="">
+          <p>Адрес</p>
+          <p>График работы</p>
+          <p>Телефон</p>
+          <p>Почта</p>
+        </div>
+        <!-- <a
+            class="social__btn social__btn_vk"
+            href="https://vk.com/id606189830"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="social__icon-vk">
+              <use xlink:href="#vk-mono"></use>
+            </svg>
+            ВКонтакте
+          </a>
+          <a
+            class="social__btn social__btn_inst"
+            href="https://www.instagram.com/chistaya58penza?r=nametag"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="social__icon-inst">
+              <use xlink:href="#inst-mono"></use>
+            </svg>
+            Instagram
+          </a> -->
+        <p class="footer__copy">
+          Copiright &copy; 2021,
+          <!-- Разработано
+          <a
+            class="footer__link"
+            href="https://www.instagram.com/_dmitriy_40in_/"
+            target="_blank"
+            rel="noopener"
+            >dmitriy_40in</a
+          >
+          2020г. -->
+        </p>
+      </div>
+    </footer>
+
+    <button class="to-top-btn js-button-top">
+      <svg class="to-top-btn__icon">
+        <use xlink:href="#keyboard_arrow_up"></use>
+      </svg>
+    </button>
+    <script src="js/jquery_3.5.1.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@import (reference) '../../less/variables.less';
+
+.title {
+  text-align: center;
+  color: @color-text;
+
+  &_one {
+    line-height: 56px;
+    font-size: 56px;
+
+    @media screen and (max-width: @tablet-small) {
+      line-height: 40px;
+      font-size: 32px;
+    }
+  }
+
+  &_two {
+    line-height: 48px;
+    font-size: 48px;
+
+    @media screen and (max-width: @tablet-small) {
+      line-height: 40px;
+      font-size: 32px;
+    }
+  }
+  
+  &_three {
+    line-height: 40px;
+    font-size: 32px;
+
+    @media screen and (max-width: @tablet-small) {
+      line-height: 32px;
+      font-size: 24px;
+    }
+  }
+
+  &_foure {
+    line-height: 32px;
+    font-size: 24px;
+
+    @media screen and (max-width: @tablet-small) {
+      line-height: 28px;
+      font-size: 20px;
+    }
+  }
+
+  &_black {
+    color: @color-text;
+  }
+
+  &_light {
+    color: @color-text-second;
+  }
+
+  &_order_l {
+    margin-bottom: 48px;
+
+    @media screen and (max-width: @tablet-small) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &_order_s {
+    margin-bottom: 24px;
+  }
+
+  &_align_left {
+    text-align-last: left;
+  }
+}

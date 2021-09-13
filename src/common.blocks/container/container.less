@@ -1,0 +1,31 @@
+@import (reference) '../../less/variables.less';
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  
+  @media screen and (max-width: @tablet-small) {
+    padding: 0 16px;
+  }
+
+  &_small {
+    max-width: none;
+  }
+
+  &_above {
+    position: relative;
+    z-index: 10;
+  }
+
+  &_position {
+    position: relative;
+    z-index: 5;
+  }
+
+  &_from_slider {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
