@@ -1,20 +1,28 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .logo {
-  width: 152px;
-  height: 51px;
-  margin-right: 64px;
   display: flex;
+
+  margin-right: 80px;
+
   align-items: center;
 
   @media screen and (max-width: @hamburger) {
-    width: 120px;
-    height: 40px;
     align-items: initial;
   }
 
   &__icon {
-    width: 100%;
     display: block;
+
+    width: 100%;
+    height: 60px;
+  }
+
+  & span {
+    margin-left: 8px;
+
+    color: @color-brand;
+
+    font-size: 24px;
   }
 }

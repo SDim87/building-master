@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Cupboard Shop</title>
+    <title>Мастер58</title>
     <link
       rel="preload"
-      href="fonts/Raleway-Regular.woff2"
+      href="fonts/Ubuntu-Regular.woff2"
       as="font"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/Oswald-Regular.woff2"
+      href="fonts/Ubuntu-Bold.woff2"
       as="font"
       crossorigin="anonymous"
     />
@@ -23,26 +23,26 @@
     <header class="header js-header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="logo">
-            <!-- <img class="logo__icon" src="./common.blocks/logo/logo.svg" alt="Логотип"> -->
-            Logotype
-          </div>
+          <a href="index.html" class="logo">
+            <img class="logo__icon" src="./common.blocks/logo/logo.svg" alt="Логотип">
+            <span>Мастер58</span>
+          </a>
           <div class="header__dropdown js-header__dropdown">
             <div class="header__menu">
               <nav class="header__nav js-header__nav">
                 <ul class="navigation">
                   <li class="navigation__item">
                     <a
-                      href="#products"
+                      href="#about"
                       class="navigation__link js-navigation__link js-scroll-block"
-                      >Товары</a
+                      >Рассчет</a
                     >
                   </li>
                   <li class="navigation__item">
                     <a
-                      href="#about"
+                      href="#products"
                       class="navigation__link js-navigation__link js-scroll-block"
-                      >О нас</a
+                      >Товары</a
                     >
                   </li>
                   <li class="navigation__item">
@@ -56,16 +56,16 @@
               </nav>
               <div class="contacts">
                 <div class="contacts__wrap">
-                  <div class="contacts__item contacts__item_order_s">
+                  <div class="contacts__item">
                     <svg class="contacts__icon">
                       <use xlink:href="#phone"></use>
                     </svg>
-                    <a href="tel:+7(964)877-47-78" class="contacts__link"
-                      >+7 (964) 877-47-78</a
+                    <a href="tel:+7(953)024-12-12" class="contacts__link"
+                      >+7 (953) 024-12-12</a
                     >
                   </div>
                 </div>
-                <div class="contacts__soc social">
+                <!-- <div class="contacts__soc social">
                   <a
                     class="social__link social_order"
                     href="https://vk.com/id606189830"
@@ -86,7 +86,7 @@
                       <use xlink:href="#inst"></use>
                     </svg>
                   </a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -105,10 +105,10 @@
           <div class="swiper-wrapper">
             <div
               class="slider__item swiper-slide"
-              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+              style="background: url(${require('./static/images/slider/slider__img-1.webp')}) 50% 50%; background-size: cover;"
             >
               <div class="container container_from_slider">
-                <div class="slider__title">Мебель от Профессионалов</div>
+                <div class="slider__title">Мастера высокого класса</div>
                 <p class="slider__text">
                   Наши клиенты всегда довольны результатом!
                 </p>
@@ -116,23 +116,34 @@
             </div>
             <div
               class="slider__item swiper-slide"
-              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+              style="background: url(${require('./static/images/slider/slider__img-2.webp')}) 50% 50%; background-size: cover;"
             >
               <div class="container container_from_slider">
-                <div class="slider__title">Оптом дешевле</div>
+                <div class="slider__title">Электрика под&nbsp;ключ</div>
                 <p class="slider__text">
-                  При заказе более 30 000 рублей - скидка 10%
+                  При заказе электромонтажных работ на всю квартиру - скидка 10%
                 </p>
               </div>
             </div>
             <div
               class="slider__item swiper-slide"
-              style="background: url(${require('./common.blocks/slider/slider__img_1.jpg')}) 50% 50%; background-size: cover;"
+              style="background: url(${require('./static/images/slider/slider__img-3.webp')}) 50% 50%; background-size: cover;"
             >
               <div class="container container_from_slider">
                 <div class="slider__title">Постоянным клиентам</div>
                 <p class="slider__text">
-                  При повторном заказе мебели - скидка 10%
+                  При повторном заказе - скидка 5%
+                </p>
+              </div>
+            </div>
+            <div
+              class="slider__item swiper-slide"
+              style="background: url(${require('./static/images/slider/slider__img-4.webp')}) 50% 50%; background-size: cover;"
+            >
+              <div class="container container_from_slider">
+                <div class="slider__title">Пенсионерам</div>
+                <p class="slider__text">
+                  Дорогим нашим бабушкам и дедушкам - скидка 10%
                 </p>
               </div>
             </div>
@@ -146,325 +157,129 @@
         <section class="about">
           <div class="container">
             <h2 class="title title_foure title_order_l">
-              Создайте свой шкаф за несколько простых шагов
+              Легко рассчитать стоимость работ
             </h2>
             <div class="about__wrapper">
               <ul class="about__list">
                 <li class="about__item js_about__item" id="about__block-1">
-                  <p class="about__title">Задавайте размер</p>
+                  <p class="about__title">Электромонтаж</p>
                   <p class="about__text js_about__text">
-                    Настройте ширину, высоту, глубину, чтобы максимально
-                    использовать ваше пространство.
+                    Рассчитайте стоимость электромонтажных работ.
                   </p>
                 </li>
                 <li class="about__item js_about__item" id="about__block-2">
-                  <p class="about__title">Создавайте свой проект</p>
+                  <p class="about__title">Плитка</p>
                   <p class="about__text js_about__text">
-                    Выберите высокие двери только с внутренними ящиками или
-                    добавьте внешние ящики для более быстрого доступа.
+                    Рассчитайте стоимость плиточных работ.
                   </p>
                 </li>
                 <li class="about__item js_about__item" id="about__block-3">
-                  <p class="about__title">Выберите свой цвет</p>
+                  <p class="about__title">Напольные покрытия</p>
                   <p class="about__text js_about__text">
-                    Выберите цвет, соответствующий вашему пространству.
+                    Рассчитайте стоимость укладки напольных покрытий.
                   </p>
                 </li>
               </ul>
               <div class="about__picture">
+                <div class="about__block-1">
+                  <table class="table">
+                    <tr>
+                      <th>Наименование работ</th>
+                      <th>Цена, руб.</th>
+                      <th>Единица измерения</th>
+                    </tr>
+                    <tr>
+                      <td>Штроба электромонтажная 20-25мм</td>
+                      <td>от 150</td>
+                      <td>п.м.</td>
+                    </tr>
+                    <tr>
+                      <td>Заделывание штробы</td>
+                      <td>100</td>
+                      <td>п.м.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка автомата</td>
+                      <td>от 300</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка счетчика</td>
+                      <td>от 1000</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка подрозетника</td>
+                      <td>от 300</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка распаячной коробки</td>
+                      <td>от 300</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка розетки, выключателя, тв, интернет</td>
+                      <td>от 200</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Монтаж теплого пола</td>
+                      <td>от 600</td>
+                      <td>кв.м.</td>
+                    </tr>
+                    <tr>
+                      <td>Монтаж люстры</td>
+                      <td>от 700</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка бра на стену</td>
+                      <td>от 600</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка точ. светильников</td>
+                      <td>от 300</td>
+                      <td>шт.</td>
+                    </tr>
+                    <tr>
+                      <td>Монтаж линейных светильников</td>
+                      <td>от 500</td>
+                      <td>п.м.</td>
+                    </tr>
+                    <tr>
+                      <td>Установка вентилятора вытяжки</td>
+                      <td>от 700</td>
+                      <td>шт.</td>
+                    </tr>
+                  </table>
+                </div>
                 <div class="about__img">
                   <img
                     class="image js_about__img"
-                    src="./common.blocks/about/about__size_img-1.webp"
-                    alt="Изображение шкафа"
+                    src="./static/images/about/about__img-1.webp"
+                    alt="Электромонтаж"
                   />
                 </div>
                 <div class="visually-hidden">
                   <img
                     loading="lazy"
                     class="image js_about__img"
-                    src="./common.blocks/about/about__size_img-2.webp"
-                    alt="Изображение шкафа"
+                    src="./static/images/about/about__img-2.webp"
+                    alt="Плиточные работы"
                   />
                   <img
                     loading="lazy"
                     class="image js_about__img"
-                    src="./common.blocks/about/about__size_img-3.webp"
-                    alt="Изображение шкафа"
+                    src="./static/images/about/about__img-3.webp"
+                    alt="Напольные покрытия"
                   />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_white_1.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_white_2.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_black_1.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_black_2.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_gray_1.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_gray_2.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_multy_1.webp"
-                    alt="Изображение шкафа"
-                  />
-                  <img
-                    loading="lazy"
-                    class="image js_about__img"
-                    src="./common.blocks/about/about__img_multy_2.webp"
-                    alt="Изображение шкафа"
-                  />
-                </div>
-                <div class="about__filter js_about__filter_size">
-                  <div class="about__filter-wrap">
-                    <button class="about__place js-about__size" data-size="1">
-                      Мини
-                    </button>
-                    <button class="about__place js-about__size" data-size="2">
-                      Средний
-                    </button>
-                    <button class="about__place js-about__size" data-size="3">
-                      Большой
-                    </button>
-                  </div>
-                </div>
-                <div class="about__filter js_about__filter_double">
-                  <div class="about__filter-wrap">
-                    <button class="about__place js_about__place" data-place="1">
-                      <svg style="fill: white;">
-                        <use xlink:href="#internal"></use>
-                      </svg>
-                      <span>Internal</span>
-                    </button>
-                    <button class="about__place js_about__place" data-place="2">
-                      <svg style="fill: white;">
-                        <use xlink:href="#external"></use>
-                      </svg>
-                      <span>External</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="about__filter js_about__filter_color">
-                  <div class="about__filter-wrap">
-                    <button
-                      class="about__color js-about__color"
-                      data-color="white"
-                    >
-                      <span class="about__color-bg about__color-bg_white">
-                        Белый цвет
-                      </span>
-                    </button>
-                    <button
-                      class="about__color js-about__color"
-                      data-color="gray"
-                    >
-                      <span class="about__color-bg about__color-bg_gray">
-                        Серый цвет
-                      </span>
-                    </button>
-                    <button
-                      class="about__color js-about__color"
-                      data-color="multy"
-                    >
-                      <span
-                        class="about__color-bg about__color-bg_gray about__color-bg_left"
-                      >
-                        Серый цвет
-                      </span>
-                      <span
-                        class="about__color-bg about__color-bg_pink about__color-bg_right"
-                      >
-                        Розовый цвет
-                      </span>
-                    </button>
-                    <button
-                      class="about__color js-about__color"
-                      data-color="black"
-                    >
-                      <span class="about__color-bg about__color-bg_black">
-                        Черный цвет
-                      </span>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
-      <!-- ========== products ============== -->
-      <div class="body__indent body__indent_bgFourth" id="products">
-        <div class="container">
-          <section class="products">
-            <h2 class="title title_two title_order_l">Продукция</h2>
-            <div class="products__box" style="position: relative;">
-              <div class="products__container js-products__container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="grid__item grid__item_center_mob">
-                      <div class="grid__inner">
-                        <div class="grid__top">
-                          <div class="grid__link">
-                            <img
-                              class="grid__img"
-                              src="./static/images/sale/sale__img_1.webp"
-                              alt="Картинка товара"
-                            />
-                          </div>
-                        </div>
-                        <div class="grid__bottom">
-                          <p class="grid__title">Шкаф 01</p>
-                          <p class="grid__size">Ширина: 1490 мм</p>
-                          <p class="grid__size">Высота: 2340 мм</p>
-                          <p class="grid__size">Глубина: 530 мм</p>
-                          <p class="grid__price">139 000 руб.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="grid__item grid__item_center_mob">
-                      <div class="grid__inner">
-                        <div class="grid__top">
-                          <div class="grid__link">
-                            <img
-                              class="grid__img"
-                              src="./static/images/sale/sale__img_2.webp"
-                              alt="Картинка товара"
-                            />
-                          </div>
-                        </div>
-                        <div class="grid__bottom">
-                          <p class="grid__title">Шкаф 02</p>
-                          <p class="grid__size">Ширина: 2510 мм</p>
-                          <p class="grid__size">Высота: 2370 мм</p>
-                          <p class="grid__size">Глубина: 630 мм</p>
-                          <p class="grid__price">217 300 руб.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="grid__item grid__item_center_mob">
-                      <div class="grid__inner">
-                        <div class="grid__top">
-                          <div class="grid__link">
-                            <img
-                              class="grid__img"
-                              src="./static/images/sale/sale__img_3.webp"
-                              alt="Картинка товара"
-                            />
-                          </div>
-                        </div>
-                        <div class="grid__bottom">
-                          <p class="grid__title">Шкаф 03</p>
-                          <p class="grid__size">Ширина: 1780 мм</p>
-                          <p class="grid__size">Высота: 2990 мм</p>
-                          <p class="grid__size">Глубина: 520 мм</p>
-                          <p class="grid__price">170 300 руб.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="grid__item grid__item_center_mob">
-                      <div class="grid__inner">
-                        <div class="grid__top">
-                          <div class="grid__link">
-                            <img
-                              class="grid__img"
-                              src="./static/images/sale/sale__img_4.webp"
-                              alt="Картинка товара"
-                            />
-                          </div>
-                        </div>
-                        <div class="grid__bottom">
-                          <p class="grid__title">Шкаф 04</p>
-                          <p class="grid__size">Ширина: 560 мм</p>
-                          <p class="grid__size">Высота: 2650 мм</p>
-                          <p class="grid__size">Глубина: 450 мм</p>
-                          <p class="grid__price">77 400 руб.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="grid__item grid__item_center_mob">
-                      <div class="grid__inner">
-                        <div class="grid__top">
-                          <div class="grid__link">
-                            <img
-                              class="grid__img"
-                              src="./static/images/sale/sale__img_5.webp"
-                              alt="Картинка товара"
-                            />
-                          </div>
-                        </div>
-                        <div class="grid__bottom">
-                          <p class="grid__title">Шкаф 05</p>
-                          <p class="grid__size">Ширина: 2550 мм</p>
-                          <p class="grid__size">Высота: 2750 мм</p>
-                          <p class="grid__size">Глубина: 630 мм</p>
-                          <p class="grid__price">238 000 руб.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Add navigation buttons -->
-              <div
-                class="btn-slider btn-slider__prev btn-slider__prev_none js-products__prev"
-              >
-                <svg class="icon icon_prev icon_sixth">
-                  <use xlink:href="#arrow-prev"></use>
-                </svg>
-              </div>
-              <div
-                class="btn-slider btn-slider__next btn-slider__next_none js-products__next"
-              >
-                <svg class="icon icon_next">
-                  <use xlink:href="#arrow-next"></use>
-                </svg>
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div
-              class="products__pagination js-products__pagination swiper-pagination"
-            ></div>
-            <div class="products__wrap-btn">
-              <button class="button button_brand button_size_l">
-                Рассчитать шкаф
-              </button>
-            </div>
-          </section>
-        </div>
       </div>
       <!-- ========== Ditails ============== -->
       <div class="body__indent body__indent_bgFourth" id="products">

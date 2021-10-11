@@ -55,7 +55,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js$/,
-      // exclude: /node_modules/,
+      exclude: /node_modules/,
       loaders: [
         'babel-loader',
         {
@@ -67,28 +67,26 @@ module.exports = {
           },
         }],
     },
-
-    // {
-    //   test: /\.vue$/,
-    //   loader: 'vue-loader',
-    //   options: {
-    //     loaders: {
-    //       less: ExtractTextPlugin.extract({
-    //         use: [{
-    //           loader: 'css-loader',
-    //           options: lessOptions,
-    //         }, {
-    //           loader: 'less-loader',
-    //           options: lessOptions,
-    //         }],
-    //         fallback: 'vue-style-loader',
-    //       }),
-    //     },
-    //     postcss: postCssConfig,
-    //     // other vue-loader options go here
-    //   },
-    // },
-
+    {
+      test: /\.vue$/,
+      loader: 'vue-loader',
+      options: {
+        loaders: {
+          less: ExtractTextPlugin.extract({
+            use: [{
+              loader: 'css-loader',
+              options: lessOptions,
+            }, {
+              loader: 'less-loader',
+              options: lessOptions,
+            }],
+            fallback: 'vue-style-loader',
+          }),
+        },
+        postcss: postCssConfig,
+        // other vue-loader options go here
+      },
+    },
     {
       test: /\.css$/,
       use: ExtractTextPlugin.extract({

@@ -1,9 +1,9 @@
 @import (reference) "../../less/variables.less";
 
-
-
 .about__wrapper {
   display: flex;
+
+  user-select: none;
 
   @media screen and (max-width: @tablet) {
     display: block;
@@ -30,7 +30,7 @@
 .about__item {
   position: relative;
 
-  padding-left: 20px;
+  padding-left: 24px;
 
   cursor: pointer;
   transition: @transition;
@@ -69,7 +69,7 @@
 
 .about__title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
 
   @media screen and (max-width: @tablet) {
     font-size: 20px;
@@ -100,188 +100,34 @@
 
   overflow: hidden;
 
+  max-height: 600px;
+
+  border: 4px solid @color-fifth;
   border-radius: 20px;
 
   @media screen and (max-width: @tablet) {
     max-width: 500px;
     margin: 0 auto;
   }
-}
 
-.about__filter {
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  bottom: -300px;
-  left: 0;
-
-  box-sizing: border-box;
-  width: 336px;
-  height: 88px;
-  margin: 0 auto;
-  padding: 0 32px;
-
-  transition: @transition;
-
-  border-radius: 12px;
-  background-color: @color-dark-light;
-
-  background-blend-mode: multiply;
-
-  @media screen and (max-width: @tablet) {
-    width: auto;
-    height: 64px;
-
-    border-radius: 0;
-  }
-
-  @media screen and (max-width: @phone-landscape) {
-    height: 45px;
-    padding: 0 16px;
-  }
-
-  &.isActive {
-    bottom: 32px;
-
-    @media screen and (max-width: @tablet) {
-      bottom: 0;
-    }
-  }
-}
-
-.about__filter-wrap {
-  display: flex;
-
-  height: 100%;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.about__place {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  width: 85px;
-  height: 56px;
-  padding: 4px;
-
-  cursor: pointer;
-  transition: @transition;
-  text-align: center;
-
-  border: 1px solid @color-dark-light;
-  border-radius: 8px;
-  background-color: @color-third;
-
-  font-size: 12px;
-  font-weight: 700;
-
-  justify-content: center;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-right: 16px;
-  }
-
-  @media screen and (max-width: @tablet) {
-    width: 74px;
-    height: 46px;
-  }
-
-  @media screen and (max-width: @phone-landscape) {
-    height: 28px;
-  }
-
-  &.isActive {
-    pointer-events: none;
-
-    color: @color-brand;
-    border: 1px solid @color-brand;
-  }
-
-  & span {
-    margin-top: 4px;
-  }
-
-  & svg {
-    @media screen and (max-width: @phone-landscape) {
-      display: none;
-    }
-  }
-}
-
-.about__color {
-  position: relative;
-
-  overflow: hidden;
-
-  width: 34px;
-  height: 34px;
-
-  cursor: pointer;
-
-  border: 2px solid @color-third;
-  border-radius: 50%;
-
-  font-size: 0;
-
-  @media screen and (max-width: @phone-landscape) {
-    width: 24px;
-    height: 24px;
-
-    border-width: 1px;
-  }
-
-  &:not(:last-child) {
-    margin-right: 32px;
-
-    @media screen and (max-width: @tablet) {
-      margin-right: 24px;
-    }
-  }
-
-  &.isActive {
-    pointer-events: none;
-
-    border-color: @color-brand;
-  }
-}
-
-.about__color-bg {
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 34px;
-  height: 34px;
-
-  content: "";
-  transform: translateY(-50%);
-
-  &_white {
-    background-color: @color-third;
-  }
-
-  &_black {
-    background-color: @color-black;
-  }
-
-  &_gray {
-    background-color: @color-gray;
-  }
-
-  &_pink {
-    background-color: @color-pink;
-  }
-
-  &_left {
-    right: -50%;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-  }
 
-  &_right {
-    left: 50%;
+    content: "";
+
+    background-color: rgba(@color-third, 0.85);
   }
+}
+
+.about__block-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 100%;
 }

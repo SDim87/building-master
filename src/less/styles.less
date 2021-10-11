@@ -1,36 +1,40 @@
-@import (reference) './variables.less';
+@import (reference) "./variables.less";
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
-       url('../assets/fonts/Raleway-Regular.woff') format('woff');
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url("../assets/fonts/Ubuntu-Medium.woff2") format("woff2"),
+  url("../assets/fonts/Ubuntu-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
   font-weight: normal;
   font-style: normal;
+
+  src: url("../assets/fonts/Ubuntu-Regular.woff2") format("woff2"),
+  url("../assets/fonts/Ubuntu-Regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../assets/fonts/Raleway-SemiBold.woff2') format('woff2'),
-       url('../assets/fonts/Raleway-SemiBold.woff') format('woff');
-  font-weight: 600;
+  font-family: "Ubuntu";
+  font-weight: bold;
   font-style: normal;
+
+  src: url("../assets/fonts/Ubuntu-Bold.woff2") format("woff2"),
+  url("../assets/fonts/Ubuntu-Bold.woff") format("woff");
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2'),
-      url('../assets/fonts/Raleway-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 html {
   color: @color-text;
 
-  font: 600 18px 'Raleway', Arial, Helvetica, sans-serif;
+  font: 600 18px "Ubuntu", Arial, Helvetica, sans-serif;
   line-height: 26px;
 }
 
