@@ -13,21 +13,17 @@
     padding: 80px 0 0;
 
     @media screen and (max-width: @tablet) {
-      padding: 40px 0;
+      padding: 40px 0 0;
     }
   }
 
-  &__indent_bgFourth {
-    background-color: @color-fourth;
-  }
-
-  &__indent_bgSixth {
-    background-color: @color-sixth;
+  &__indent_bg {
+    background-color: rgba(@color-brand, 0.05);
   }
 
   &__indent_bgCallback {
-    background: linear-gradient(rgba(@color-third, 0.2)),
-                url('./callback__bg.webp') 50% 50% no-repeat;
+    background: linear-gradient(@color-dark-light),
+    url('./callback_bg.png') 50% 50% no-repeat;
     background-size: cover;
   }
 }

@@ -1,133 +1,26 @@
 @import (reference) "../../less/variables.less";
 
-.about__wrapper {
-  display: flex;
+.about {
+  & h1 {
+    margin-bottom: 32px;
 
-  user-select: none;
-
-  @media screen and (max-width: @tablet) {
-    display: block;
-  }
-}
-
-.about__list {
-  flex: 0 0 auto;
-
-  max-width: 33.3%;
-  min-height: 300px;
-  margin-right: 80px;
-
-  list-style-type: none;
-
-  @media screen and (max-width: @tablet) {
-    max-width: 345px;
-    min-height: 220px;
-    margin-right: 0;
-    margin-bottom: 24px;
-  }
-}
-
-.about__item {
-  position: relative;
-
-  padding-left: 24px;
-
-  cursor: pointer;
-  transition: @transition;
-
-  color: rgba(@color-text-third, 0.5);
-
-  &:not(:last-child) {
-    margin-bottom: 24px;
+    font-size: 18px;
   }
 
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 4px;
-    height: 6px;
-
-    content: "";
-    -webkit-transition: height 0.2s ease-in-out;
-    transition: height 0.2s ease-in-out;
-    transform: translateY(-50%);
-
-    border-radius: 12px;
-    background-color: @color-fifth;
+  & p {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 
-  &.isActive::before {
-    height: 100%;
+  & p,
+  & h1 {
+    @media screen and (max-width: @tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: @tablet-small) {
+      font-size: 14px;
+    }
   }
-
-  &.isActive {
-    color: #484444;
-  }
-}
-
-.about__title {
-  font-size: 24px;
-  font-weight: bold;
-
-  @media screen and (max-width: @tablet) {
-    font-size: 20px;
-  }
-}
-
-.about__text {
-  overflow: hidden;
-
-  max-height: 0;
-
-  transition: all 0.2 ease-in-out;
-
-  font-size: 14px;
-
-  @media screen and (max-width: @tablet) {
-    font-size: 12px;
-  }
-
-  .about__item.isActive & {
-    max-height: 300px;
-    margin-top: 8px;
-  }
-}
-
-.about__picture {
-  position: relative;
-
-  overflow: hidden;
-
-  max-height: 600px;
-
-  border: 4px solid @color-fifth;
-  border-radius: 20px;
-
-  @media screen and (max-width: @tablet) {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    content: "";
-
-    background-color: rgba(@color-third, 0.85);
-  }
-}
-
-.about__block-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  box-sizing: border-box;
-  width: 100%;
 }

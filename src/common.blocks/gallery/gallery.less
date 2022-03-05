@@ -3,66 +3,65 @@
 .gallery {
   position: relative;
 
-  &__container {
-    overflow-x: hidden;
+  &__box {
+    position: relative;
 
-    width: 100%;
-  }
+    overflow: hidden;
 
-  &__wrap-btn {
-    display: flex;
-
-    margin-top: 24px;
-
-    justify-content: center;
-  }
-
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  & .swiper-slide {
-    width: 1000px;
+    cursor: pointer;
 
     border-radius: 12px;
 
-    &:nth-child(2),
-    &:nth-child(4),
-    &:nth-child(6),
-    &:nth-child(9),
-    &:nth-child(12) {
-      width: 492px;
+    & .icon {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+
+      width: 80px;
+      height: 80px;
+
+      fill: @color-text-second;
+
+      @media screen and (max-width: @tablet) {
+        right: 8px;
+        bottom: 8px;
+
+        width: 52px;
+        height: 52px;
+      }
+
+      @media screen and (max-width: @phone-landscape) {
+        right: 4px;
+        bottom: 4px;
+
+        width: 40px;
+        height: 40px;
+      }
     }
 
-    @media screen and (max-width: @tablet-landscape) {
-      width: 556px;
-
-      &:nth-child(2),
-      &:nth-child(9),
-      &:nth-child(12) {
-        width: 274px;
-      }
-
-      &:nth-child(4),
-      &:nth-child(6) {
-        width: 269px;
+    @media (hover: hover) {
+      &:hover .gallery__img {
+        transform: scale(1.01);
       }
     }
+  }
 
-    @media screen and (max-width: @tablet-small) {
-      width: 301px;
+  &__img {
+    position: relative;
 
-      &:nth-child(2),
-      &:nth-child(9),
-      &:nth-child(12) {
-        width: 148px;
-      }
+    transition: @transition;
 
-      &:nth-child(4),
-      &:nth-child(6) {
-        width: 146px;
-      }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+
+      background-color: @color-dark-light;
     }
   }
 }

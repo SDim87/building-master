@@ -1,7 +1,9 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .navigation {
   list-style: none;
+
+  user-select: none;
 
   @media screen and (max-width: @hamburger) {
     margin-bottom: 40px;
@@ -18,8 +20,8 @@
       display: block;
 
       padding: 16px 0;
-
       // color: @color-brand;
+
       border-bottom: 1px solid @color-gray-light;
     }
   }

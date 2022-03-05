@@ -1,0 +1,82 @@
+@import (reference) '../../less/variables.less';
+
+.circle {
+  display: flex;
+
+  padding: 4px;
+
+  border-radius: 50%;
+  background: @gradient-first;
+  background-clip: content-box;
+
+  justify-content: center;
+  align-items: center;
+
+
+  &_small {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+
+    color: @color-text-second;
+    border: 2px solid @color-third;
+
+    line-height: 24px;
+
+    @media screen and (max-width: @phone-landscape) {
+      width: 34px;
+      height: 34px;
+      margin-right: 8px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &_big {
+    width: 88px;
+    height: 88px;
+    border: 2px solid @color-brand;
+    flex: 0 0 auto;
+
+    @media screen and (max-width: @tablet) {
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  &_order_s {
+    margin-right: 16px;
+  }
+
+  &_order {
+    margin-left: 64px;
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-left: 32px;
+    }
+  }
+
+  &__text {
+    color: @color-text-second;
+    
+    font-size: 32px;
+    line-height: 40px;
+
+    @media screen and (max-width: @tablet-small) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__icon {
+    width: 57px;
+    height: 57px;
+    fill: @color-third;
+
+    @media screen and (max-width: @tablet) {
+      width: 37px;
+      height: 37px;
+    }
+  }
+}

@@ -51,10 +51,20 @@ li,
 button {
   margin: 0;
   padding: 0;
+
+  &::selection {
+    color: @color-text-second;
+    background: @color-brand;
+  }
 }
 
 a {
   text-decoration: none;
 
   color: inherit;
+
+  &::selection {
+    color: @color-text-second;
+    background: @color-brand;
+  }
 }

@@ -36,8 +36,8 @@ require("expose-loader?Swiper!swiper/dist/js/swiper.js");
 
 
 // magnific-popup
-// require("magnific-popup/dist/magnific-popup.css");
-// require("expose-loader?magnificPopup!magnific-popup/dist/jquery.magnific-popup.js");
+require("magnific-popup/dist/magnific-popup.css");
+require("expose-loader?magnificPopup!magnific-popup/dist/jquery.magnific-popup.js");
 
 // inputmask
 // require('inputmask/dist/inputmask/jquery.inputmask');
