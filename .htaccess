@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.master58.ru [NC]
+RewriteRule ^(.*)$ https://master58.ru/$1 [R=301,L]
+
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^index.html$ / [NC,R,L]
