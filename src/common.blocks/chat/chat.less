@@ -1,0 +1,31 @@
+@import (reference) "../../less/variables.less";
+
+.chat {
+  position: fixed;
+  right: 33px;
+  bottom: 104px;
+  z-index: 100000;
+
+  &__link {
+    display: flex;
+
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid @color-text-second;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+      margin-left: -5px;
+
+      fill: @color-text-second;
+    }
+
+    &_telegram {
+      background-color: #08c;
+    }
+  }
+}
