@@ -23,7 +23,6 @@
     max-width: 345px;
     min-height: 220px;
     margin-right: 0;
-    margin-bottom: 24px;
   }
 }
 
@@ -126,14 +125,12 @@
   box-sizing: border-box;
   width: 100%;
 
-  transition: @transition;
-
-  opacity: 0;
+  display: none;
 
   &.isActive {
     position: relative;
     z-index: 1;
 
-    opacity: 1;
+    display: block;
   }
 }
