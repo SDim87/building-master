@@ -2,9 +2,14 @@
 
 .chat {
   position: fixed;
+  z-index: 100000;
   right: 33px;
   bottom: 104px;
-  z-index: 100000;
+
+  @media screen and (max-width: @phone-landscape) {
+    right: 16px;
+    bottom: 80px;
+  }
 
   &__link {
     display: flex;
@@ -18,14 +23,26 @@
     justify-content: center;
     align-items: center;
 
-    & svg {
-      margin-left: -5px;
-
-      fill: @color-text-second;
+    @media screen and (max-width: @phone-landscape) {
+      width: 40px;
+      height: 40px;
     }
 
     &_telegram {
-      background-color: #08c;
+      background-color: @color-telegram;
+
+      & svg {
+        margin-left: -5px;
+      }
+    }
+
+    & svg {
+      fill: @color-text-second;
+
+      @media screen and (max-width: @tablet) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

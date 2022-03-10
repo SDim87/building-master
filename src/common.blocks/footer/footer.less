@@ -24,6 +24,22 @@
     }
   }
 
+  &__link {
+    display: block;
+
+    text-decoration: underline;
+
+    color: @color-brand;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: @tablet-small) {
+      text-align: center;
+    }
+  }
+
   &__social {
     display: flex;
 
@@ -53,11 +69,6 @@
     text-align: center;
 
     font-size: 14px;
-  }
-
-  &__email {
-    color: @color-brand;
-    text-decoration: underline;
   }
 
   &__logo {
