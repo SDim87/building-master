@@ -1,10 +1,11 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .button {
   display: inline-block;
   overflow: hidden;
 
   box-sizing: border-box;
+  padding: 8px 24px;
 
   cursor: pointer;
   transition: @transition;
@@ -13,7 +14,6 @@
   color: @color-text-second;
   border: none;
   border-radius: 12px;
-  padding: 8px 24px;
 
   font-weight: bold;
 
@@ -23,110 +23,5 @@
 
   &_brand:hover {
     background-color: @color-brand-light;
-  }
-
-  .grid__item:hover &_first {
-    z-index: 2;
-  }
-
-  .grid__item.is-not-available &_first {
-    background-color: @color-third;
-  }
-
-  &_size_s {
-    min-width: 180px;
-
-    line-height: 32px;
-  }
-
-  &_size_s2 {
-    min-width: 180px;
-
-    line-height: 40px;
-  }
-
-  &_size_m {
-    min-width: 150px;
-
-    line-height: 40px;
-  }
-
-  .grid__item.is-not-available &_size_m {
-    @media screen and (max-width: @phone-landscape) {
-      min-width: auto;
-
-      line-height: 32px;
-    }
-  }
-
-  &_size_l {
-    min-width: 200px;
-
-    font-size: 16px;
-    line-height: 48px;
-
-    @media screen and (max-width: @tablet-small) {
-      min-width: 180px;
-
-      font-size: 12px;
-      line-height: 40px;
-    }
-  }
-
-  &_size_l2 {
-    min-width: 200px;
-
-    font-size: 16px;
-    line-height: 40px;
-  }
-
-  &_size_xl {
-    min-width: 320px;
-
-    line-height: 48px;
-  }
-
-  &_size_xl_100 {
-    @media screen and (max-width: @phone) {
-      width: 100%;
-      min-width: auto;
-    }
-  }
-
-  &_block {
-    display: block;
-  }
-
-  &_centered {
-    margin: 0 auto;
-  }
-
-  &_wrap_center {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-  }
-
-  &_order_s {
-    margin-bottom: 8px;
-  }
-
-  &_order_m {
-    margin-bottom: 16px;
-  }
-
-  &_order_m_mob {
-    @media screen and (max-width: @phone) {
-      margin-bottom: 16px;
-    }
-  }
-
-  &_order_l {
-    margin-bottom: 24px;
-  }
-
-  & .icon {
-    margin-right: 8px;
   }
 }
