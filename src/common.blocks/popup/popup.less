@@ -1,0 +1,72 @@
+@import (reference) "../../less/variables.less";
+
+.popup {
+  box-sizing: border-box;
+  max-width: 509px;
+  margin: 0 auto;
+
+  border-radius: 16px;
+  background-color: @color-text-second;
+
+  & .mfp-close {
+    top: 5px;
+    right: 5px;
+
+    transition: @transition;
+  }
+
+  &#popup-success,
+  &#popup-error {
+    padding: 40px 60px;
+    
+    @media screen and (max-width: @tablet-small) {
+      padding: 24px 16px;
+    }
+
+    text-align: center;
+
+    & .icon {
+      width: 80px;
+      height: 80px;
+
+      @media screen and (max-width: @tablet-small) {
+        width: 60px;
+        height: 60px;
+      }
+
+      &.success {
+        fill: @color-access;
+      }
+
+      &.error {
+        fill: @color-error;
+      }
+    }
+
+    div {
+      margin: 16px 0 24px;
+
+      font-size: 40px;
+
+      @media screen and (max-width: @tablet-small) {
+        margin: 8px 0 16px;
+
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 32px;
+
+      @media screen and (max-width: @tablet-small) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .mfp-close {
+      display: none;
+    }
+  }
+}

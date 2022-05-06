@@ -24,11 +24,9 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "imagemin-pngquant": "^5.0.1",
+    "inputmask": "^5.0.7",
     "magnific-popup": "^1.1.0",
-    "normalize.css": "^8.0.0",
-    "swiper": "^4.5.1",
-    "vue": "^2.5.16"
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",

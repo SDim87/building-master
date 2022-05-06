@@ -27,8 +27,8 @@
 // require("expose-loader?slick!slick-carousel");
 
 // swiper slider
-require("swiper/dist/css/swiper.css");
-require("expose-loader?Swiper!swiper/dist/js/swiper.js");
+// require("swiper/dist/css/swiper.css");
+// require("expose-loader?Swiper!swiper/dist/js/swiper.js");
 
 // vue.js
 // import Vue from 'vue';
@@ -40,7 +40,7 @@ require("magnific-popup/dist/magnific-popup.css");
 require("expose-loader?magnificPopup!magnific-popup/dist/jquery.magnific-popup.js");
 
 // inputmask
-// require('inputmask/dist/inputmask/jquery.inputmask');
+require('inputmask/dist/jquery.inputmask');
 
 // jquery ui slider
 // require('jquery-ui-css/slider.css');

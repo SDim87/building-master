@@ -1,0 +1,103 @@
+@import (reference) '../../less/variables.less';
+
+.form {
+  box-sizing: border-box;
+  max-width: 405px;
+  padding: 32px;
+
+  border-radius: 12px;
+  background-color: #fff;
+
+  @media screen and (max-width: @tablet) {
+    max-width: 300px;
+    padding: 16px;
+  }
+
+  @media screen and (max-width: @tablet-small - 1) {
+    max-width: 405px;
+    margin: 40px auto 0;
+  }
+
+  &__field {
+    position: relative;
+  }
+
+  & input,
+  & textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+
+    border: none;
+    border: 1px solid @color-brand;
+    border-radius: 8px;
+
+    &:focus {
+      outline: 1px solid @color-brand;
+    }
+
+    &.error {
+      border: 1px solid @color-error;
+    }
+  }
+
+  & textarea {
+    display: block;
+
+    height: 120px;
+
+    resize: none;
+  }
+
+  & &__input {
+    &_indent_l {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+
+    & span {
+      color: @color-brand;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+
+    & span {
+      margin-right: 8px;
+
+      color: @color-brand;
+    }
+  }
+
+  &__error,
+  &__info {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__error {
+    display: none;
+
+    color: @color-error;
+
+    &.visual {
+      display: block;
+    }
+  }
+
+  &__info {
+    bottom: -16px;
+  }
+}
