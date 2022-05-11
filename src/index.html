@@ -21,20 +21,6 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://master58.ru/" />
     <title>Мастер58</title>
-    <!-- <link
-      rel="preload"
-      href="fonts/Ubuntu-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Ubuntu-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    /> -->
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       /*eslint-disable*/
@@ -62,6 +48,7 @@
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
+        webvisor: true,
       })
     </script>
     <noscript
@@ -236,6 +223,22 @@
           </div>
         </div>
       </section>
+      <!-- ========== Call ============== -->
+      <div class="call">
+        <div class="container">
+          <h2 class="title title_two title_order_l">
+            Связаться с&nbsp;мастером
+          </h2>
+          <div class="call__phone">
+            <svg class="call__icon">
+              <use xlink:href="#phone"></use>
+            </svg>
+            <a href="tel:+7(953)024-12-12" class="call__link">
+              +7 (953) 024-12-12
+            </a>
+          </div>
+        </div>
+      </div>
       <!-- ========== Coast ============== -->
       <div class="body__indent" id="coast">
         <section class="coast">
@@ -451,11 +454,19 @@
             <h2 class="title title_two title_order_l">Галерея</h2>
             <div class="gallery__box js-gallery__box" data-href="#gallery-1">
               <div class="gallery__img">
-                <img
-                  class="image"
-                  src="./static/images/gallery/gallery_bg.webp"
-                  alt="Изображение галереи"
-                />
+                <picture>
+                  <source
+                    srcset="./images/gallery/gallery_bg_mobile.webp"
+                    media="(max-width: 570px)"
+                    alt="Изображение галереи"
+                    type="image/webp"
+                  />
+                  <img
+                    class="image"
+                    src="./static/images/gallery/gallery_bg.webp"
+                    alt="Изображение галереи"
+                  />
+                </picture>
               </div>
               <div id="gallery-1" class="grid__gallery mfp-hide">
                 <a

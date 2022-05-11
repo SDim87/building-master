@@ -1,4 +1,4 @@
-@import (reference) "../../less/variables.less";
+@import (reference) '../../less/variables.less';
 
 .advantages {
   position: relative;
@@ -7,9 +7,16 @@
 
   padding: 40px 0 60px;
 
-  background: linear-gradient(@color-dark-large),
-  url('./advantages__img.jpg') no-repeat 50% 50%;
+  background-image: linear-gradient(@color-dark-large),
+    url('./advantages__img.webp');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
+
+  @media screen and (max-width: @tablet-small) {
+    background-image: linear-gradient(@color-dark-large),
+      url('./advantages__img_mobile.webp');
+  }
 
   &__wrapper {
     display: flex;

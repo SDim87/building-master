@@ -1,0 +1,48 @@
+@import (reference) "../../less/variables.less";
+
+.call {
+  text-align: center;
+  padding-top: 32px;
+
+  @media screen and (min-width: @hamburger + 1) {
+    display: none;
+  }
+
+  &__phone {
+    display: flex;
+
+    font-size: 28px;
+
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: @phone-landscape + 1) {
+      font-size: 36px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+    fill: @color-brand;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+      left: 0;
+
+      height: 3px;
+
+      content: "";
+
+      background-color: @color-brand;
+    }
+  }
+}
